@@ -6,12 +6,14 @@ export default function TrafficLight() {
 
   function handleClick() {
     setWalk(!walk);
+    {walk?alert("Parar es lo siguiente") : alert("Caminar es lo siguiente")}
   }
 
   return (
     <>
       <button onClick={handleClick}>
-        Cambia a {walk ? 'Parar' : 'Caminar'}
+        Cambia a {walk ? 'Parar' : 'Caminar' }
+       
       </button>
       <h1 style={{
         color: walk ? 'darkgreen' : 'darkred'
